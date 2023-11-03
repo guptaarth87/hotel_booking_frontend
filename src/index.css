@@ -1,0 +1,21 @@
+/*   color code*/
+
+.background_clr{
+    background: linear-gradient(90deg,#DE331F  0%, #943025 100%);
+    color:white !important;
+}
+.white{
+    color:white;
+  }
+  .alignCentre{
+    text-align: center;
+  }
+
+  .description{
+    color:#545454;
+    font-size: 1.1rem;
+  }
+
+  .border-radius{
+    border-radius: 30px;
+  }
