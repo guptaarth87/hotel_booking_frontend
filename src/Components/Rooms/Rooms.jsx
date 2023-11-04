@@ -1,6 +1,7 @@
 import React from 'react'
 import { rooms_data } from './Roomsdata'
 import './Rooms.css'
+import {Link} from 'react-router-dom';
 
 export default function Rooms() {
   return (
@@ -16,7 +17,12 @@ export default function Rooms() {
                           <h4 className="alignCentre mt-2">{items.type_of_room}     </h4>
                           {/* <h5 className="">Price - {items.price}/-</h5> */}
                           <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, perspiciatis.</p>
-                          <button className="btn background_clr">Book Now</button>
+                          <Link className="btn background_clr"
+                          to={{ 
+                            pathname: '/roomdetails', 
+                            search: `?type_of_room=${items.type_of_room}` 
+                        }}
+                          >Book Now</Link>
                           
                     </div> 
                 )

@@ -2,6 +2,9 @@
 import './App.css';
 import {Routes , Route} from 'react-router-dom';
 import LandingPage from './Pages/LandingPage';
+import RoomDetails from './Components/RoomDetails/RoomDetails';
+import CheckAvailability from './Pages/CheckAvailability';
+import BookPage from './Pages/BookPage';
 
 function App() {
   return (
@@ -10,8 +13,9 @@ function App() {
       <Routes>
        
         <Route path='/' element={<LandingPage/>}/>
-        {/* <Route path='/dashboard' element={<Dashboard/>}/>
-       */}
+        <Route path='/roomdetails' element={<RoomDetails/>}/>
+         <Route path='/checkavailability' element={<CheckAvailability/>}/>
+         <Route path='/bookroom' element={<BookPage/>}/>
       </Routes>
      </main>
     </div>

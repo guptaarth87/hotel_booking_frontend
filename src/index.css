@@ -11,6 +11,13 @@
     text-align: center;
   }
 
+  .background-shadow-3d{
+    border-radius: 37px;
+     box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.32);
+     background-color: #ffffff;
+}
+    
+
   .description{
     color:#545454;
     font-size: 1.1rem;
