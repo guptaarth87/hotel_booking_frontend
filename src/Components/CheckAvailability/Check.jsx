@@ -1,13 +1,23 @@
-import React, { useState }  from 'react'
+import React, { useState , useEffect}  from 'react'
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import { useLocation , useNavigate } from "react-router-dom";
 import moment from 'moment';
 import check from './check.svg'
+import { API_URL } from '../../Config';
+import axios from 'axios';
 
 export default function Check() {
-    const [checkindate, setcheckinDate] = useState("01-12-2023");
-    const [checkoutdate, setcheckoutDate] = useState("01-12-2023");
-    const [rooms , setRooms] = useState();
+  const navigate = useNavigate();
+  const [data, setData] = useState(null);
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const TypeOfRoom = searchParams.get('type_of_room');
+  const Price = searchParams.get('price');
+
+    const [checkindate, setcheckinDate] = useState(null);
+    const [checkoutdate, setcheckoutDate] = useState(null);
+    const [rooms , setRooms] = useState(1);
     const [checkinButton, setcheckinButton] = useState(false);
     const [checkoutButton, setcheckoutButton] = useState(false);
 
@@ -48,6 +58,28 @@ export default function Check() {
           }
       };
 
+
+      const AvailabilityCheck =async() =>{
+        try {
+          const response = await axios.post(`${API_URL}checkavailaiblity`,
+          {
+            check_in_date: checkindate,
+            check_out_date: checkoutdate,
+            no_of_rooms:  rooms,
+            type_of_room: TypeOfRoom
+          });
+          console.log(response.data.available);
+          setData(response.data);
+          if (response.data.available == true){
+                  navigate(`/BookRoom?type_of_room=${TypeOfRoom}&price=${Price}&check_in_date=${checkindate}&check_out_date=${checkoutdate}&no_of_rooms=${rooms}`)
+          }else{
+            alert("Rooms not available try entering lesser number of rooms or change dates")
+          }
+          
+        } catch (error) {
+          console.error('Error fetching data', error);
+        }
+      }
   return (
   
   <>
@@ -89,7 +121,7 @@ export default function Check() {
         <option>6</option>
       </select>
  
-   <button className='btn background_clr col-5 mt-2'>Check Availability</button>
+   <button className='btn background_clr col-5 mt-2' onClick={AvailabilityCheck}>Check Availability</button>
     </div>
 
  
