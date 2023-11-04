@@ -39,3 +39,9 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
   
+  @media(max-width:600px){
+    .img_control_hidden{
+         height:6rem;
+    }
+  }
+  

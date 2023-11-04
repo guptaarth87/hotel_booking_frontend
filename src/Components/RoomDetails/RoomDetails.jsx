@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import { rooms_data } from '../Rooms/Roomsdata';
 import './RoomDetails.css'
 import {Link} from 'react-router-dom';
+import Note from './Note';
+import Footer2 from '../Footer/Footer2';
 
 export default function RoomDetails() {
     const location = useLocation();
@@ -62,7 +64,8 @@ export default function RoomDetails() {
     </div>
       
     </div>
-   
+    <Note/>
+    <Footer2/>
     </>
   )
 }

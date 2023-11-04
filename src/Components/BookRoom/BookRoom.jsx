@@ -59,7 +59,7 @@ export default function BookRoom() {
                
                 <div class="col-lg-6">
                 <div class="row g-3" >
-                    
+                <h5 className=' alignCentre'>Enter details to book</h5>
                     <div class="col-md-12">
                       <label for="fullname" class="form-label">Full name</label>
                       <input type="text" class="form-control" id="inputFullname"
