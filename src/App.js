@@ -5,6 +5,7 @@ import LandingPage from './Pages/LandingPage';
 import RoomDetails from './Components/RoomDetails/RoomDetails';
 import CheckAvailability from './Pages/CheckAvailability';
 import BookPage from './Pages/BookPage';
+import AboutUs from './Pages/AboutUs';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/roomdetails' element={<RoomDetails/>}/>
          <Route path='/checkavailability' element={<CheckAvailability/>}/>
          <Route path='/bookroom' element={<BookPage/>}/>
+         <Route path='/about' element={<AboutUs/>}/>
       </Routes>
      </main>
     </div>

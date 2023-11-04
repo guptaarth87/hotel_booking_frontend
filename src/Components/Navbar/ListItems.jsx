@@ -19,7 +19,7 @@ function ListItem({ items }) {
        },
        {
         "name":"Contact us",
-        "nav":'#contact'
+        "nav":'#contactus'
      }
    
     ]

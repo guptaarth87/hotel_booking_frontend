@@ -5,6 +5,7 @@ import './RoomDetails.css'
 import {Link} from 'react-router-dom';
 import Note from './Note';
 import Footer2 from '../Footer/Footer2';
+import Header from '../Navbar/Header';
 
 export default function RoomDetails() {
     const location = useLocation();
@@ -30,6 +31,7 @@ export default function RoomDetails() {
         };
   return (
     <>
+    <Header/>
     <div className="container">
     <h2 className='mt-4 alignCentre'>Details for {dataValue}</h2>
     <div className="row mt-4">

@@ -54,7 +54,7 @@ export default function Navbar() {
               <HLink className="nav_link link4" to='/about'>About us</HLink>
               <HLink className="nav_link link1" to='#rooms'>Booking</HLink>
               <HLink className="nav_link link2" to='#gallery'>Gallery</HLink>
-              <HLink className="nav_link link3" to='#contact'>Contact us</HLink>              
+              <HLink className="nav_link link3" to='#contactus'>Contact us</HLink>              
               
                            
      </div>
