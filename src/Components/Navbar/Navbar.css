@@ -93,3 +93,8 @@
 height:5rem;
 width:7rem;
 }
+
+.button-back{
+    position: absolute;
+    right:10px;
+}
