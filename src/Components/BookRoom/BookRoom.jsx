@@ -3,6 +3,7 @@ import booking from './booking.svg'
 import { useLocation, useNavigate  } from "react-router-dom";
 import { API_URL } from '../../Config';
 import axios from 'axios'
+import './BookRoom.css'
 
 export default function BookRoom() {
   const navigate = useNavigate();
@@ -21,6 +22,8 @@ export default function BookRoom() {
     name_: '',
     phone_no: '',
   });
+  const [message , setMessage] = useState(null);
+  const [popup , setPopup] = useState(false);
 
  const  handleChange=(e)=>{
     const { name, value } = e.target;
@@ -29,6 +32,11 @@ export default function BookRoom() {
       [name]: value,
     });
   }
+  const handlePopup=()=>{
+    setPopup(false);
+    navigate('/')
+}
+
   const handleBooking =async ()=>{
      const BookingData={
       name:formData.name_,
@@ -42,8 +50,9 @@ export default function BookRoom() {
      try {
       const response = await axios.post(`${API_URL}addbooking`,BookingData);
       console.log(response.data);
-      alert(`${response.data.user.name} We will contact you soon for payment and booking confirmation`)
-      navigate('/')
+      setMessage(`${response.data.user.name} We will contact you soon for payment and booking confirmation`)
+      setPopup(true);
+     
     } catch (error) {
       console.error('Error Adding Booking data', error);
     }
@@ -54,6 +63,18 @@ export default function BookRoom() {
     <div class="container">
         <div class="background-shadow-3d  m-4 p-4">
             <div class="row">
+            {
+        popup?
+        <div className="popup">
+         <div className="background-shadow-3d  m-4 p-4  col-lg-4 col-sm-12 ">
+          <h5>{message}</h5>
+          <br></br>
+          <button onClick={handlePopup} className="btn background_clr">OK</button>
+         </div>
+         </div>
+        :
+        <></>
+      }
                 <img class="col-lg-5" src={booking} />
                 
                

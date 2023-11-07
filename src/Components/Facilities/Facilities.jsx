@@ -81,8 +81,8 @@ export default function Facilities() {
                return( 
                <>
                 <div className = "  slide">
-                 <div className="card_div">
-                    <img className=" col-4 expertImg " src={items.img_url}/>
+                 <div className="card_div card p-2">
+                    <img className=" col-2 expertImg " src={items.img_url}/>
                    <br></br> <h5 >{items.name}</h5>
                </div> 
             </div>
@@ -104,9 +104,9 @@ export default function Facilities() {
                return( 
                <>
                 <div className = "slide">
-                 <div className="card_div">
+                 <div className="card_div card p-2">
                     
-                 <img className=" col-4 expertImg " src={items.img_url}/>
+                 <img className=" col-2 expertImg " src={items.img_url}/>
                    <br></br> <h5 >{items.name}</h5>
                     
                </div> 

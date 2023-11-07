@@ -35,7 +35,7 @@ export const rooms_data = [
         "price":950
     },
     {
-        "type_of_room":"Conference Room",
+        "type_of_room":"Conference AC Room",
         "img_url":conference_room,
         "images":[delux_ac , executive_ac , family_sofa],
         "description": "Hotel Delux room: A lavish, upscale accommodation featuring luxurious amenities and elegant decor. Equipped with modern comforts, a spacious layout, and scenic views, providing a sophisticated and comfortable stay for guests.",

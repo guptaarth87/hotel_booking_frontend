@@ -6,6 +6,7 @@ import moment from 'moment';
 import check from './check.svg'
 import { API_URL } from '../../Config';
 import axios from 'axios';
+import './Check.css'
 
 export default function Check() {
   const navigate = useNavigate();
@@ -20,17 +21,27 @@ export default function Check() {
     const [rooms , setRooms] = useState(1);
     const [checkinButton, setcheckinButton] = useState(false);
     const [checkoutButton, setcheckoutButton] = useState(false);
+    const [message , setMessage] = useState(null);
+    const [popup , setPopup] = useState(false);
 
     const onChangeCheckin = (newDate) => {
         setcheckoutButton(false);
+        let today = new Date();
         if (moment(newDate, 'YYYY-MM-DD', true).isValid()) {
+            
             setcheckoutButton(false);
             const formatted = moment(newDate).format('DD-MM-YYYY');
             console.log(formatted);
-            
-            // setFormattedDate(formatted);
+            today = moment(today).format('DD-MM-YYYY');
+            if (formatted < today || checkoutdate > checkindate ) {
+              setMessage('Check-in date should be after today\'s date if entered check-in date is a previous date of today.');
+              setPopup(true);
+            }else{
+               // setFormattedDate(formatted);
             setcheckinDate(formatted);
             setcheckinButton(false);
+            }
+           
           } else {
             console.error('Invalid date:', newDate);
             setcheckinButton(false);
@@ -44,22 +55,34 @@ export default function Check() {
     }
   
     const onChangeCheckout= (newDate) => {
+      let today = new Date();
         if (moment(newDate, 'YYYY-MM-DD', true).isValid()) {
             setcheckinButton(false);
             const formatted = moment(newDate).format('DD-MM-YYYY');
-            console.log(formatted);
-            
+          
+            today = moment(today).format('DD-MM-YYYY');
+           
+            if (checkoutdate > checkindate || formatted < today) {
+              setMessage('Check-out date cannot be before the check-in date Or check out date cannot be before todays date ');
+              setPopup(true);
+            } else{
+              setcheckoutDate(formatted);
+              setcheckoutButton(false);
+            }
             // setFormattedDate(formatted);
-            setcheckoutDate(formatted);
-            setcheckoutButton(false);
+           
           } else {
             console.error('Invalid date:', newDate);
             setcheckoutButton(false);
           }
       };
 
+      const handlePopup=()=>{
+            setPopup(false);
+      }
 
       const AvailabilityCheck =async() =>{
+        
         try {
           const response = await axios.post(`${API_URL}checkavailaiblity`,
           {
@@ -73,7 +96,9 @@ export default function Check() {
           if (response.data.available == true){
                   navigate(`/BookRoom?type_of_room=${TypeOfRoom}&price=${Price}&check_in_date=${checkindate}&check_out_date=${checkoutdate}&no_of_rooms=${rooms}`)
           }else{
-            alert("Rooms not available try entering lesser number of rooms or change dates")
+            setMessage("Rooms not available try entering lesser number of rooms or change dates");
+            setPopup(true)
+            // alert("Rooms not available try entering lesser number of rooms or change dates")
           }
           
         } catch (error) {
@@ -85,6 +110,18 @@ export default function Check() {
   <>
   <div className="container">
     <div className="row">
+      {
+        popup?
+        <div className="popup">
+         <div className="background-shadow-3d  m-4 p-4  col-lg-4 col-sm-12 ">
+          <h5>{message}</h5>
+          <br></br>
+          <button onClick={handlePopup} className="btn background_clr">OK</button>
+         </div>
+         </div>
+        :
+        <></>
+      }
     <img  className ="col-lg-6 mt-5 " src={check} />
     <div className="col-1"></div>
     <div className="card col-lg-4 p-3 " style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>

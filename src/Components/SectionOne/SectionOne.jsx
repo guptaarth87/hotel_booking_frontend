@@ -10,7 +10,7 @@ export default function SectionOne() {
        <video className="video_control" src={landing_video} autoPlay muted loop />
        <div className="contentx">
             <h1>Welcome</h1>
-            <p>To my site.</p>
+            <h2>To Hotel Amar Shanti </h2>
         </div>
        </div>
     </>
