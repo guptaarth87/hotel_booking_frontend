@@ -2,8 +2,9 @@ import React,{useState} from 'react'
 import booking from './booking.svg'
 import { useLocation, useNavigate  } from "react-router-dom";
 import { API_URL } from '../../Config';
-import axios from 'axios'
-import './BookRoom.css'
+import axios from 'axios';
+import './BookRoom.css';
+import moment from 'moment';
 
 export default function BookRoom() {
   const navigate = useNavigate();
@@ -36,7 +37,9 @@ export default function BookRoom() {
     setPopup(false);
     navigate('/')
 }
-
+let today = new Date();
+today = moment(today).format('DD-MM-YYYY');
+console.log(today);
   const handleBooking =async ()=>{
      const BookingData={
       name:formData.name_,
@@ -45,6 +48,7 @@ export default function BookRoom() {
       check_out_date : Checkoutdate,
       no_of_rooms : Rooms,
       type_of_room : TypeOfRoom,
+      booking_date: today,
       amount : Amount
      }
      try {
