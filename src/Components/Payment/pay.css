@@ -1,0 +1,8 @@
+.paymentcard{
+    margin-left: 20%;
+}
+@media(max-width:767px){
+    .paymentcard{
+        margin-left: 0%;
+    }
+}

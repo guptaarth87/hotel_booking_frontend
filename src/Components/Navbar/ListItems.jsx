@@ -6,6 +6,10 @@ import './Navbar.css';
 function ListItem({ items }) {
     items = [
       {
+        "name":"Pay",
+        "nav":"/payment"
+    },
+      {
           "name":"About us",
           "nav":"/about"
       },
@@ -20,7 +24,8 @@ function ListItem({ items }) {
        {
         "name":"Contact us",
         "nav":'#contactus'
-     }
+     },
+     
    
     ]
  
