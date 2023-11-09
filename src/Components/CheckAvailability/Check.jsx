@@ -1,12 +1,12 @@
 import React, { useState , useEffect}  from 'react'
-import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { useLocation , useNavigate } from "react-router-dom";
 import moment from 'moment';
 import check from './check.svg'
 import { API_URL } from '../../Config';
 import axios from 'axios';
-import './Check.css'
+import './Check.css';
+import Loader from '../Loader/Loader';
 
 export default function Check() {
   const navigate = useNavigate();
@@ -19,82 +19,77 @@ export default function Check() {
     const [checkindate, setcheckinDate] = useState(null);
     const [checkoutdate, setcheckoutDate] = useState(null);
     const [rooms , setRooms] = useState(1);
-    const [checkinButton, setcheckinButton] = useState(false);
-    const [checkoutButton, setcheckoutButton] = useState(false);
-    const [message , setMessage] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
+
+    const [message , setMessage] = useState("Check in date cannot be before today and check out date cannot be before check in date, So re-enter the dates to check");
     const [popup , setPopup] = useState(false);
 
-    const onChangeCheckin = (newDate) => {
-        setcheckoutButton(false);
-        let today = new Date();
-        if (moment(newDate, 'YYYY-MM-DD', true).isValid()) {
-            
-            setcheckoutButton(false);
-            const formatted = moment(newDate).format('DD-MM-YYYY');
-            console.log(formatted);
-            today = moment(today).format('DD-MM-YYYY');
-            if (formatted < today || checkoutdate > checkindate ) {
-              setMessage('Check-in date should be after today\'s date if entered check-in date is a previous date of today.');
-              setPopup(true);
-            }else{
-               // setFormattedDate(formatted);
-            setcheckinDate(formatted);
-            setcheckinButton(false);
-            }
-           
-          } else {
-            console.error('Invalid date:', newDate);
-            setcheckinButton(false);
-          }
-     
-    };
+   
+
+   
 
     const handleRooms =(e) =>{
             setRooms(e.target.value);
             console.log(e.target.value);
     }
-  
-    const onChangeCheckout= (newDate) => {
-      let today = new Date();
-        if (moment(newDate, 'YYYY-MM-DD', true).isValid()) {
-            setcheckinButton(false);
-            const formatted = moment(newDate).format('DD-MM-YYYY');
-          
-            today = moment(today).format('DD-MM-YYYY');
-           
-            if (checkoutdate > checkindate || formatted < today) {
-              setMessage('Check-out date cannot be before the check-in date Or check out date cannot be before todays date ');
-              setPopup(true);
-            } else{
-              setcheckoutDate(formatted);
-              setcheckoutButton(false);
-            }
-            // setFormattedDate(formatted);
-           
-          } else {
-            console.error('Invalid date:', newDate);
-            setcheckoutButton(false);
-          }
-      };
+   
+    const onChangeCheckin = (e) => {
+      let date_ = e.target.value;
+      // date_ =moment(date_).format('DD-MM-YYYY');
+       setcheckinDate(date_);
+       
+     
+    };
 
+    const onChangeCheckout= (e) => {
+      let date_ = e.target.value;
+       setcheckoutDate(date_);
+       
+    }
+  
+    // console.log(date_);
+      
       const handlePopup=()=>{
             setPopup(false);
       }
+      const ParamCheck = ()=>{
+        let today = new Date();
+        today = today.toISOString().split('T')[0];
+        console.log("today x checkin",(checkindate > today  ))
+        console.log("checkin",checkindate);
+        console.log("checkout" , checkoutdate);
+        console.log("today",today);
+        if (checkindate > today  ){
+          if (checkindate < checkoutdate){
+            return true;
+          }else{
+            return false;
+          }
+        }else{
+          return false;
+        }
+      }
 
       const AvailabilityCheck =async() =>{
-        
+        setIsLoading(true);
+        if (ParamCheck()){
+
+      
         try {
+          const checkin = moment(checkindate).format('DD-MM-YYYY')
+          const checkout = moment(checkoutdate).format('DD-MM-YYYY')
           const response = await axios.post(`${API_URL}checkavailaiblity`,
           {
-            check_in_date: checkindate,
-            check_out_date: checkoutdate,
+            check_in_date: checkin ,
+            check_out_date: checkout,
             no_of_rooms:  rooms,
             type_of_room: TypeOfRoom
           });
           console.log(response.data.available);
           setData(response.data);
+          setIsLoading(false);
           if (response.data.available == true){
-                  navigate(`/BookRoom?type_of_room=${TypeOfRoom}&price=${Price}&check_in_date=${checkindate}&check_out_date=${checkoutdate}&no_of_rooms=${rooms}`)
+                  navigate(`/BookRoom?type_of_room=${TypeOfRoom}&price=${Price}&check_in_date=${checkin}&check_out_date=${checkout}&no_of_rooms=${rooms}`)
           }else{
             setMessage("Rooms not available try entering lesser number of rooms or change dates");
             setPopup(true)
@@ -102,20 +97,32 @@ export default function Check() {
           }
           
         } catch (error) {
-          console.error('Error fetching data', error);
+          setIsLoading(false);
+          alert.error('Error fetching data', error);
         }
+      }else{
+        // param check failed
+        setIsLoading(false);
+        setPopup(true);
+      }
       }
   return (
   
   <>
+  {
+    isLoading?
+    <Loader/>
+    :
+
   <div className="container">
     <div className="row">
       {
         popup?
         <div className="popup">
-         <div className="background-shadow-3d  m-4 p-4  col-lg-4 col-sm-12 ">
+         <div className="background-shadow-3d  m-4 p-4  col-lg-6 col-md-6 col-sm-12 ">
           <h5>{message}</h5>
           <br></br>
+
           <button onClick={handlePopup} className="btn background_clr">OK</button>
          </div>
          </div>
@@ -126,27 +133,17 @@ export default function Check() {
     <div className="col-1"></div>
     <div className="card col-lg-4 p-3 " style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
     <h3 className='alignCentre'>Check Availability</h3>
-   <h5>Check in Date - {checkindate}</h5>
-   <button className='btn background_clr col-4' onClick={()=>setcheckinButton(true)}>Check in date</button>
-   {
-    checkinButton?
-    <div style={{ display: 'flex', justifyContent: 'center' , marginTop: '50px'}}>
-    <Calendar onChange={onChangeCheckin} value={checkindate} />
+   <h5>Check in Date(YYYY-MM-DD) :   {checkindate}</h5>
+   <input className='form-control' type='date'
+   value={checkindate}
    
-  </div>
-  :
-  <></>
-   }
+   onChange={onChangeCheckin}/>
    <hr></hr>
-   <h5>Check out Date - {checkoutdate}</h5>
-   <button className='btn background_clr col-4' onClick={()=>setcheckoutButton(true)}>Check out date</button>
-   {
-       checkoutButton?
-       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
-         <Calendar onChange={onChangeCheckout} value={checkoutdate} />
-       </div>:
-       <></>
-   }
+   <h5>Check out Date(YYYY-MM-DD) :  {checkoutdate}</h5>
+     <input className='form-control' type='date'
+     value={checkoutdate}
+     onChange={onChangeCheckout}
+      />
    <hr></hr>
    <h5 >Enter No of rooms (1 to 5)</h5>
    <select id="inputState" class="form-control" value={rooms} onChange={handleRooms}>
@@ -158,7 +155,7 @@ export default function Check() {
         <option>6</option>
       </select>
  
-   <button className='btn background_clr col-5 mt-2' onClick={AvailabilityCheck}>Check Availability</button>
+   <button className='btn background_clr col-lg-5 mt-2' onClick={AvailabilityCheck}>Check Availability</button>
     </div>
 
  
@@ -167,9 +164,12 @@ export default function Check() {
   
   </div>
    
-  
+  }
   </>
    
 
   )
+  
 }
+
+

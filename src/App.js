@@ -7,6 +7,7 @@ import CheckAvailability from './Pages/CheckAvailability';
 import BookPage from './Pages/BookPage';
 import AboutUs from './Pages/AboutUs';
 import Pay from './Components/Payment/Pay';
+import Loader from './Components/Loader/Loader';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
          <Route path='/bookroom' element={<BookPage/>}/>
          <Route path='/about' element={<AboutUs/>}/>
          <Route path='/payment' element={<Pay/>} />
+         <Route path='/loader' element={<Loader/>}/>
       </Routes>
      </main>
     </div>

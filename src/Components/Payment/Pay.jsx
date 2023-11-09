@@ -4,6 +4,7 @@ import './pay.css';
 import { API_URL } from '../../Config';
 import  QrCode from './QrCode.png'
 import axios from 'axios';
+import Loader from '../Loader/Loader';
 
 export default function Pay() {
 
@@ -12,6 +13,7 @@ export default function Pay() {
     const [ Fetched , setFetched] = useState(false);
     const [message , setMessage] = useState(null);
     const [popup , setPopup] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e)=>{
         const phone_no = e.target.value;
@@ -23,12 +25,16 @@ export default function Pay() {
     }
 
     const handlePaymentFetch =async ()=>{
+         isLoading(true);
          const data_ =await axios.get(`${API_URL}pay/${phone}`)
-         if ((data_.data.data).length >0){
+         if ((data_.data.data).length >0){  
+          isLoading(false);
             setpayAmount(data_.data.data[0].amount);
             setFetched(true);
+
          }else{
-             setMessage("Enter Correct phone number , we are unable to find any booking with this number");
+          isLoading(false);
+             setMessage("Enter Correct phone number , we are unable to find any unconfirmed or unpaid  booking with this number");
              setPopup(true);
          }
        
@@ -38,6 +44,10 @@ export default function Pay() {
   return (
     <>
      <Header/>
+{
+  isLoading?
+  <Loader/>
+  :
      <div className="container">
         <h2 className='alignCentre mt-4'>Payment page</h2>
      {
@@ -74,6 +84,7 @@ export default function Pay() {
            }
        </div>
      </div>
+     }
     </>
   )
 }

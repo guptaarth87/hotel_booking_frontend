@@ -3,7 +3,7 @@ import booking from './booking.svg'
 import { useLocation, useNavigate  } from "react-router-dom";
 import { API_URL } from '../../Config';
 import axios from 'axios';
-import './BookRoom.css';
+// import './BookRoom.css';
 import moment from 'moment';
 
 export default function BookRoom() {
@@ -65,12 +65,11 @@ console.log(today);
   return (
     <>
     <div class="container">
-        <div class="background-shadow-3d  m-4 p-4">
-            <div class="row">
+       
             {
         popup?
         <div className="popup">
-         <div className="background-shadow-3d  m-4 p-4  col-lg-4 col-sm-12 ">
+         <div className="background-shadow-3d p-4  col-lg-4 col-sm-12 ">
           <h5>{message}</h5>
           <br></br>
           <button onClick={handlePopup} className="btn background_clr">OK</button>
@@ -79,6 +78,8 @@ console.log(today);
         :
         <></>
       }
+       <div class="background-shadow-3d  m-4 p-4">
+            <div class="row">
                 <img class="col-lg-5" src={booking} />
                 
                
