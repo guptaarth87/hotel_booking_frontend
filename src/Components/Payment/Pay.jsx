@@ -25,15 +25,15 @@ export default function Pay() {
     }
 
     const handlePaymentFetch =async ()=>{
-         isLoading(true);
+         setIsLoading(true);
          const data_ =await axios.get(`${API_URL}pay/${phone}`)
          if ((data_.data.data).length >0){  
-          isLoading(false);
+          setIsLoading(false);
             setpayAmount(data_.data.data[0].amount);
             setFetched(true);
 
          }else{
-          isLoading(false);
+          setIsLoading(false);
              setMessage("Enter Correct phone number , we are unable to find any unconfirmed or unpaid  booking with this number");
              setPopup(true);
          }
