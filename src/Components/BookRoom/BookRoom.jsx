@@ -54,7 +54,7 @@ console.log(today);
      try {
       const response = await axios.post(`${API_URL}addbooking`,BookingData);
       console.log(response.data);
-      setMessage(`${response.data.user.name} We will contact you soon for payment and booking confirmation`)
+      setMessage(`${response.data.user.name} You have to text us on Whatapp at +91 9752450044 for payment and booking confirmation. `)
       setPopup(true);
      
     } catch (error) {
@@ -69,8 +69,8 @@ console.log(today);
             {
         popup?
         <div className="popup">
-         <div className="background-shadow-3d p-4  col-lg-4 col-sm-12 ">
-          <h5>{message}</h5>
+         <div className="background-shadow-3d p-4  col-lg-8 col-sm-12 ">
+          <div className="heading">{message}</div>
           <br></br>
           <button onClick={handlePopup} className="btn background_clr">OK</button>
          </div>
@@ -85,6 +85,7 @@ console.log(today);
                
                 <div class="col-lg-6">
                 <div class="row g-3" >
+                  <strong>Note** You have to text us on Whatapp at number +91 9752450044 for payment and booking confirmation. </strong>
                 <h5 className=' alignCentre'>Enter details to book</h5>
                     <div class="col-md-12">
                       <label for="fullname" class="form-label">Full name</label>

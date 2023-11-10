@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Loader.css'; // Make sure to import your CSS file
 
 const Loader = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
+  
 //   useEffect(() => {
 //     // Simulate data loading
 //     setTimeout(() => {

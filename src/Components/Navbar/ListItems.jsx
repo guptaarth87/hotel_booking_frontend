@@ -6,24 +6,24 @@ import './Navbar.css';
 function ListItem({ items }) {
     items = [
       {
-        "name":"Pay",
-        "nav":"/payment"
+        "name":"Home",
+        "nav":"/"
     },
       {
           "name":"About us",
           "nav":"/about"
       },
         {
-           "name":"Booking",
-           "nav":'#rooms',
+           "name":"Book rooms",
+           "nav":'/rooms',
         },
         {
           "name":"Gallery",
-          "nav":'#gallery'
+          "nav":'/gallery'
        },
        {
         "name":"Contact us",
-        "nav":'#contactus'
+        "nav":'/contactus'
      },
      
    

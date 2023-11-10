@@ -1,13 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import About from '../Components/Aboutus/About'
 import Footer2 from '../Components/Footer/Footer2'
 import Header from '../Components/Navbar/Header'
+import { useNavigate} from 'react-router-dom';
+import Navbar from '../Components/Navbar/Navbar';
 
 export default function AboutUs() {
+  // const navigate = useNavigate()
+  // useEffect(()=>{
+  //     navigate("/about/#aboutus");
+  // })
   return (
     <>
-    <Header/>
-     <h2 className='alignCentre mt-4'>About us</h2>
+    <Navbar/>
+     <h2 className='alignCentre mt-4' id="aboutus">About us</h2>
      <div className="container">
      <About/>
      </div>

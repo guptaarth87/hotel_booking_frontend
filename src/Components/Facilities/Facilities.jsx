@@ -95,28 +95,7 @@ export default function Facilities() {
         </div>
     </div>   
 
-    <div className="slider">
-        <div className="slide-track-reverse">
-            
-          {
-              facilityList.map((items,key)=>{
-               console.log(items.img_url)
-               return( 
-               <>
-                <div className = "slide">
-                 <div className="card_div card p-2">
-                    
-                 <img className=" col-2 expertImg " src={items.img_url}/>
-                   <br></br> <h5 >{items.name}</h5>
-                    
-               </div> 
-            </div>
-               </>
-               )
-              })
-          }
-        </div>
-    </div>  
+   
     </div>
     </>
   )
