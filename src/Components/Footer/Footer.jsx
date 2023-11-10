@@ -24,7 +24,7 @@ function Footer(){
                         <li><HashLink className="link white" to="#rooms">Book Rooms</HashLink></li>
                         <li><HashLink className="link white" to="#facilities">Facilities</HashLink></li>
                         <li><HashLink className="link white" to="#SectionOne">Go to top</HashLink></li>
-                        <li><Link className="link white" to="/contact">Contact</Link></li>
+                        <li><Link className="link white" to="#contact">Contact</Link></li>
                     </ul>
                 </div>
                 
