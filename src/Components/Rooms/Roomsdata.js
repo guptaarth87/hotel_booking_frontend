@@ -7,42 +7,42 @@ import executive_sofa from '../../Assets/landing/executive_sofa.jpg';
 
 export const rooms_data = [
     {
-        "type_of_room":"Executive Sofa AC Room",
+        "type_of_room":"Executive Sofa AC Room", //Do not try to change the type of rooms
         "img_url":executive_sofa,
         "images":[delux_ac , executive_ac , family_sofa],
         "description": "Hotel Delux room: A lavish, upscale accommodation featuring luxurious amenities and elegant decor. Equipped with modern comforts, a spacious layout, and scenic views, providing a sophisticated and comfortable stay for guests." ,
         "price":1750
     },
     {
-        "type_of_room":"Family Sofa AC Room",
+        "type_of_room":"Family Sofa AC Room",//Do not try to change the type of rooms
         "img_url":family_sofa,
         "images":[delux_ac , executive_ac , family_sofa],
         "description": "Hotel Delux room: A lavish, upscale accommodation featuring luxurious amenities and elegant decor. Equipped with modern comforts, a spacious layout, and scenic views, providing a sophisticated and comfortable stay for guests.",
         "price":1500
     },
     {
-        "type_of_room":"Executive AC Room",
+        "type_of_room":"Executive AC Room",//Do not try to change the type of rooms
         "img_url":executive_ac,
         "images":[delux_ac , executive_ac , family_sofa],
         "description": "Hotel Delux room: A lavish, upscale accommodation featuring luxurious amenities and elegant decor. Equipped with modern comforts, a spacious layout, and scenic views, providing a sophisticated and comfortable stay for guests.",
         "price":1500
     },
     {
-        "type_of_room":"Deluxe AC Room",
+        "type_of_room":"Deluxe AC Room",//Do not try to change the type of rooms
         "img_url":delux_ac,
         "images":[delux_ac , executive_ac , family_sofa],
         "description": "Hotel Delux room: A lavish, upscale accommodation featuring luxurious amenities and elegant decor. Equipped with modern comforts, a spacious layout, and scenic views, providing a sophisticated and comfortable stay for guests.",
         "price":950
     },
     {
-        "type_of_room":"Conference AC Room",
+        "type_of_room":"Conference AC Room",//Do not try to change the type of rooms
         "img_url":conference_room,
         "images":[delux_ac , executive_ac , family_sofa],
         "description": "Hotel Delux room: A lavish, upscale accommodation featuring luxurious amenities and elegant decor. Equipped with modern comforts, a spacious layout, and scenic views, providing a sophisticated and comfortable stay for guests.",
         "price":1000
     },
     {
-        "type_of_room":"Party hall",
+        "type_of_room":"Party hall",//Do not try to change the type of rooms
         "img_url":party_hall,
         "images":[delux_ac , executive_ac , family_sofa],
         "description": "Hotel Delux room: A lavish, upscale accommodation featuring luxurious amenities and elegant decor. Equipped with modern comforts, a spacious layout, and scenic views, providing a sophisticated and comfortable stay for guests.",

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import Footer2 from '../Components/Footer/Footer2'
 import contact from './contact.svg';
+import { BasicInfo } from '../DataConfigFile';
 
 export default function ContactusPage() {
   return (
@@ -19,10 +20,10 @@ export default function ContactusPage() {
            <br></br>
            <img src={contact}  className='img_control_hidden col-lg-6 col-sm-2'/>
            <h5 className=''>ADDRESS</h5>
-           <div className='description'>Jhabua road ,Aspatal chauraha ,  Meghnagar</div>
+           <div className='description'>{BasicInfo.address}</div>
            <br></br>
            <h5 className=''>Phone No </h5>
-           <div className='description'>+91 9752450044 </div>
+           <div className='description'>{BasicInfo.phone_no}</div>
         </div>
       
        

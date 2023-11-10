@@ -1,5 +1,5 @@
 import React from 'react'
-import { rooms_data } from './Roomsdata'
+import { rooms_data } from '../../DataConfigFile'
 import './Rooms.css'
 import {Link} from 'react-router-dom';
 

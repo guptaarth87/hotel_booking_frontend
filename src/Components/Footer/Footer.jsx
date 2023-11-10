@@ -1,6 +1,7 @@
 import './Footer.css';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import { BasicInfo } from '../../DataConfigFile';
 
 function Footer(){
     return (
@@ -31,8 +32,8 @@ function Footer(){
                 <div className="col-lg-4 col-md-6 ">
                     <h5 className="mb-3 white">Contact info</h5>
                     <ul className="list-unstyled text-muted">
-                    <li className='white'>Address : Jhabua road ,Aspatal chauraha ,  Meghnagar</li>
-                        <li className='white'>Phone No : +91 9752450044</li>
+                    <li className='white'>Address : {BasicInfo.address}</li>
+                        <li className='white'>Phone No : {BasicInfo.phone_no}</li>
                         
                         
                     </ul>
