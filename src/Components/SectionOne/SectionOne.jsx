@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { BasicInfo } from '../../DataConfigFile';
 import './SectionOne.css';
 import { LandingpageData } from '../../DataConfigFile';
 
@@ -11,7 +11,7 @@ export default function SectionOne() {
        <video className="video_control" src={LandingpageData.video1} autoPlay muted loop />
        <div className="contentx">
             <h1>Welcome</h1>
-            <h2>To Hotel Amar Shanti </h2>
+            <h2>To {BasicInfo.name} </h2>
         </div>
        </div>
     </>

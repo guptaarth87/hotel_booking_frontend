@@ -113,6 +113,7 @@ export const LandingpageData ={
 }
 
 export const BasicInfo = {
+    "name": "Hotel Amar Shanti",
     "address" :"Jhabua road ,Aspatal chauraha ,  Meghnagar",
     "phone_no":"+91 9752450044",
 }

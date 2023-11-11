@@ -12,7 +12,7 @@ export default function Footer2() {
     
          <div className="row gy-4 gx-5">
              <div className="col-lg-4 col-md-6">
-                 <h5 className="h1 white">Hotel Amar Shanti</h5>
+                 <h5 className="h1 white">{BasicInfo.name}</h5>
                  <p className="small white subhead">Best room , taxi and food services!</p>
                  <p className="small white mb-0">&copy; Copyrights. All rights reserved. Hotel Amar Shanti</p>
              </div>
