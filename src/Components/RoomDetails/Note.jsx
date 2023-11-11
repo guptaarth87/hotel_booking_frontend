@@ -1,6 +1,7 @@
 import React from 'react'
 import note from './note.svg'
-import './RoomDetails.css'
+import './RoomDetails.css';
+import { NoteData } from '../../DataConfigFile';
 
 export default function Note() {
   return (
@@ -11,16 +12,18 @@ export default function Note() {
         <div className="row">
            <img src={note} className="col-lg-5 img_control_hidden" /> 
           <div className="col-lg-6">
-             
-        <div>1. Booking of the room will be confirmed after payment of at least 50% of the total amount.</div>
-        <hr></hr>
-        <div>2. Check-out time of room is 24 hours</div>
-        <hr></hr>
-        <div>3. Don’t forget to carry your Identity (Linke Aadhaar card, pan card etc)</div>
-        <hr></hr>
-        <div>4.There are extra charges for extra bed that is 500/-</div>
-        <hr></hr>
-        <div>5. There are extra charges for extra bed that is 500/-</div>
+          {
+            NoteData.map((item,key)=>{
+              return(
+                <>
+                <div>{item}</div>
+                <hr></hr>
+                </>
+              )
+            })
+          }   
+        
+      
           </div>
         </div>
         

@@ -67,7 +67,7 @@ export default function Facilities() {
        ];
   return (
     <>
-  <div id="facilities"></div>
+  <div id="facilities mt-4"></div>
   <div  >
     <br></br>
   <h2 className='alignCentre mt-4'>Available facilities</h2>

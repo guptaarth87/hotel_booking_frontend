@@ -1,11 +1,10 @@
 import React , {useState} from 'react'
 import { useLocation } from "react-router-dom";
-import { rooms_data } from '../Rooms/Roomsdata';
+import { rooms_data } from '../../DataConfigFile';
 import './RoomDetails.css'
 import {Link} from 'react-router-dom';
 import Note from './Note';
 import Footer2 from '../Footer/Footer2';
-import Header from '../Navbar/Header';
 import Navbar from '../Navbar/Navbar';
 
 export default function RoomDetails() {

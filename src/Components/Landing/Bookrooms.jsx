@@ -1,5 +1,4 @@
 import React from 'react'
-import img1 from '../../Assets/landing/executive_sofa.jpg';
 import "./Landing.css";
 import { Link } from 'react-router-dom';
 import { LandingpageData } from '../../DataConfigFile';
@@ -20,7 +19,7 @@ export default function Bookrooms() {
         <br></br>
     <Link to='/rooms' className='btn background_clr'>Book rooms</Link>
       </div>
-     <img src={LandingpageData.room_section_img} className="col-lg-5 img-control" />
+     <img src={LandingpageData.room_section_img} className="col-lg-5 img-control m-1" />
     </div>
     </>
 

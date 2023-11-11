@@ -16,7 +16,7 @@ export default function Rooms() {
                           <img className="card-img height_img mt-3" src={items.img_url} />
                           <h4 className="alignCentre mt-2">{items.type_of_room}     </h4>
                           {/* <h5 className="">Price - {items.price}/-</h5> */}
-                          <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, perspiciatis.</p>
+                          <p className='description'>{items.tag_line}</p>
                           <Link className="btn background_clr"
                           to={{ 
                             pathname: '/roomdetails', 
