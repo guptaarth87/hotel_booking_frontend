@@ -1,6 +1,10 @@
 import React from 'react'
 import img1 from '../../Assets/about/1.jpg';
-import img2 from '../../Assets/about/2.jpg';
+
+import { Aboutus } from '../../DataConfigFile';
+import { BasicInfo } from '../../DataConfigFile';
+
+import './About.css';
 
 export default function About() {
   return (
@@ -8,20 +12,33 @@ export default function About() {
      <div className="row mt-5">
      <div className="col-lg-5 description">
         <h3>People at the heart of our business</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam praesentium architecto impedit dolor repudiandae, et, <br></br><br></br> excepturi beatae debitis sint, rerum consectetur distinctio ut nisi! Possimus autem quis voluptates aliquam fugit dignissimos reprehenderit delectus magnam.
+       {Aboutus.div1_content}
       </div>
-     <img src={img2} className="img-control col-lg-5" />
-      
-      
+     <img src={img1} className="img-control col-lg-5" />
      </div>
-     <div className="row mt-4">
-      <img src={img1} className="img-control col-lg-5" />
-      
-      <div className="col-lg-5 description">
-        <h3 className='mt-2'>Our way of being</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br><br></br>Repellat veniam praesentium architecto impedit dolor repudiandae, et, excepturi beatae debitis sint, rerum consectetur distinctio ut nisi! Possimus autem quis voluptates aliquam fugit dignissimos reprehenderit delectus magnam.
+     <br></br>
+     <br></br>
+     <div className="row">
+      <div className="col-lg-10 col-sm-12 description">
+        {Aboutus.div2_content}{BasicInfo.phone_no}
+        <br></br>
+        <br></br>
+        {Aboutus.div3_content}
       </div>
      </div>
+     <br></br>
+     <br></br>
+     <div className="row ">
+     <img  className="col-lg-7 border-radius m-2 galary-img-height" src={Aboutus.img1} />
+     <div className="col-lg-4 ">
+        <div className="row">
+        <img  className="col-lg-12 border-radius m-2 galary-img2-height" src={Aboutus.img2} />
+        </div>
+        <div className="row">
+        <img  className="col-lg-12 border-radius m-2 galary-img2-height" src={Aboutus.img3} />
+        </div>
+     </div>
+    </div>
     
     </>
   )

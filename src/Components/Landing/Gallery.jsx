@@ -17,9 +17,16 @@ export default function Gallery() {
        {LandingpageData.gallary_section_data2}
         <br></br>
         <br></br>
-    <Link to='/gallery' className='btn background_clr'>Visit Gallary</Link>
+    
       </div>
-   
+   <div className="row">
+    <div className="col-lg-10 col-sm-12 description">
+      {LandingpageData.gallary_section_data3}
+      <br></br>
+      <br></br>
+      <Link to='/gallery' className='btn background_clr'>Visit Gallary</Link>
+    </div>
+   </div>
     </div>
     </>
   

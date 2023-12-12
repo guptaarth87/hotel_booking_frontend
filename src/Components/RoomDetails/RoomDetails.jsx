@@ -53,7 +53,10 @@ export default function RoomDetails() {
     </div>
 
     <div className="col-lg-4 mt-2">
-          <p className='description ss'>{description}</p>
+          <p className='description ss'>{filteredObjects[0].description}</p>
+          <br></br>
+          <br></br>
+          <div className="description">{filteredObjects[0].tag_line}</div>
           <h5>Price - {filteredObjects[0].price} + 12% gst</h5>
           <br></br><br></br>
           <Link className='btn background_clr'

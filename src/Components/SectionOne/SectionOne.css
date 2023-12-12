@@ -14,6 +14,8 @@
 
 .contentx {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-weight: 700; */
     position: absolute;
     width: 100%;
     height: 70%;

@@ -12,6 +12,10 @@ export default function SectionOne() {
        <div className="contentx">
             <h1>Welcome</h1>
             <h2>To {BasicInfo.name} </h2>
+            <div className="container">
+            <h3>{BasicInfo.tag_line}</h3>
+            </div>
+            
         </div>
        </div>
     </>

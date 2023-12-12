@@ -17,9 +17,21 @@ export default function Bookrooms() {
         {LandingpageData.room_section_data2}
         <br></br>
         <br></br>
-    <Link to='/rooms' className='btn background_clr'>Book rooms</Link>
+    
       </div>
      <img src={LandingpageData.room_section_img} className="col-lg-5 img-control m-1" />
+    </div>
+    <div className="row">
+      <div className="col-lg-10 col-sm-12 description">
+      {LandingpageData.room_section_data3}
+        <br></br>
+        <br></br>
+        {LandingpageData.room_section_data4}
+        <br></br>
+        <br></br>
+        <Link to='/rooms' className='btn background_clr'>Book rooms</Link>
+      </div>
+    
     </div>
     </>
 
