@@ -155,10 +155,10 @@ export default function Check() {
         <option>5</option>
         <option>6</option>
       </select>
- 
-   <button className='btn background_clr col-lg-5 mt-2' onClick={AvailabilityCheck}>Check Availability</button>
+      <div className="btnCentre">
+   <button className='btn background_clr col-lg-5 mt-2 ' onClick={AvailabilityCheck}>Check Availability</button>
     </div>
-
+    </div>
  
     </div>
   

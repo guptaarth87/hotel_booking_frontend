@@ -15,7 +15,7 @@ export default function Header() {
     <>
      <div className = "navbar_custom flex shadow_bottom">
      <div className = "navcontent ">
-        Logo
+        {/* Logo */}
      </div>
      <button onClick={handleGoBack} className='btn background_clr m-2 button-back' >
       Go Back

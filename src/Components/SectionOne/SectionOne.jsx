@@ -12,7 +12,7 @@ export default function SectionOne() {
        <div className="contentx">
             <h1 className='font-sectionone'>Welcome</h1>
             <h2 className='font-sectionone'>To {BasicInfo.name} </h2>
-            <br></br>
+          
            <div className="container">
             <h2 className='alignCentre font-sectionone'>{BasicInfo.tag_line}</h2>
             </div>

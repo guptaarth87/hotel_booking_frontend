@@ -120,7 +120,7 @@ export const BasicInfo = {
     "name": "Hotel Amar Shanti",
     "address" :"Jhabua road ,Aspatal chauraha ,  Meghnagar",
     "phone_no":"+91 9752450044",
-    "tag_line":"Your ideal hotel in Meghnagar, Madhya Pradesh. Meghnagar is a census town, near Jhabua town in Jhabua district in the Indian state of Madhya Pradesh."
+    "tag_line":"Your ideal hotel in Meghnagar, Madhya Pradesh."
 }
 
 export const NoteData = [

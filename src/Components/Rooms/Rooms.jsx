@@ -17,13 +17,14 @@ export default function Rooms() {
                           <h4 className="alignCentre mt-2">{items.type_of_room}     </h4>
                           {/* <h5 className="">Price - {items.price}/-</h5> */}
                           <p className='description'>{items.tag_line}</p>
-                          <Link className="btn background_clr"
+                          <div className="btnCentre">
+                          <Link className="btn background_clr "
                           to={{ 
                             pathname: '/roomdetails', 
                             search: `?type_of_room=${items.type_of_room}` 
                         }}
                           >Book Now</Link>
-                          
+                          </div>
                     </div> 
                 )
             })

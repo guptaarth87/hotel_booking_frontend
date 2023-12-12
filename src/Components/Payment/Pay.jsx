@@ -5,6 +5,8 @@ import { API_URL } from '../../Config';
 import  QrCode from './QrCode.png'
 import axios from 'axios';
 import Loader from '../Loader/Loader';
+import Navbar from '../Navbar/Navbar';
+
 
 export default function Pay() {
 
@@ -43,7 +45,7 @@ export default function Pay() {
 
   return (
     <>
-     <Header/>
+     <Navbar/>
 {
   isLoading?
   <Loader/>

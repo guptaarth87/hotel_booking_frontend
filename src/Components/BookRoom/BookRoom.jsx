@@ -36,7 +36,7 @@ export default function BookRoom() {
   }
   const handlePopup=()=>{
     setPopup(false);
-    navigate('/')
+    navigate('/payment')
 }
 let today = new Date();
 today = moment(today).format('DD-MM-YYYY');
@@ -106,10 +106,11 @@ console.log(today);
                     </div>
                     <h5>Total Amount - {Amount}</h5>
                     <div class="col-12">
+                    <div className="btnCentre">
                         <button type="submit" class="btn background_clr" onClick={handleBooking}>Book room</button>
                       </div>
                     </div>
-                  
+                    </div>
                   </div>
                 </div>
             </div>

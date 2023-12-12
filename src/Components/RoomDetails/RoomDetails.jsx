@@ -61,12 +61,14 @@ export default function RoomDetails() {
           
           <h5>Price - {filteredObjects[0].price} + 12% gst</h5>
           <br></br>
+        
           <Link className='btn background_clr'
           to={{ 
             pathname: '/checkavailability', 
             search: `?type_of_room=${dataValue}&price=${filteredObjects[0].price}` 
         }}
           >Book now</Link>
+         
   </div>
     </div>
       
