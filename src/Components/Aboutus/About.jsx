@@ -10,20 +10,25 @@ export default function About() {
   return (
     <>
      <div className="row mt-5">
-     <div className="col-lg-5 description">
+     <div className="col-lg-6 description">
         <h3>People at the heart of our business</h3>
+        <br></br>
        {Aboutus.div1_content}
+       <br></br>
+      <br></br>
+      {Aboutus.div2_content}
       </div>
-     <img src={img1} className="img-control col-lg-5" />
+      
+     <img src={img1} className="img-control-about col-lg-5" />
      </div>
      <br></br>
      <br></br>
      <div className="row">
-      <div className="col-lg-10 col-sm-12 description">
-        {Aboutus.div2_content}{BasicInfo.phone_no}
+      <div className="col-lg-12 col-sm-12 subheading">
+        {Aboutus.div3_content}{BasicInfo.phone_no}.
         <br></br>
-        <br></br>
-        {Aboutus.div3_content}
+        
+        {Aboutus.div4_content}
       </div>
      </div>
      <br></br>

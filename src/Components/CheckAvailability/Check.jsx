@@ -51,6 +51,7 @@ export default function Check() {
       
       const handlePopup=()=>{
             setPopup(false);
+            window.location.reload();
       }
       const ParamCheck = ()=>{
         let today = new Date();

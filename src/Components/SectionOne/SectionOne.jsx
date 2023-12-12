@@ -10,10 +10,11 @@ export default function SectionOne() {
     <div className="overlay"></div>
        <video className="video_control" src={LandingpageData.video1} autoPlay muted loop />
        <div className="contentx">
-            <h1>Welcome</h1>
-            <h2>To {BasicInfo.name} </h2>
-            <div className="container">
-            <h3>{BasicInfo.tag_line}</h3>
+            <h1 className='font-sectionone'>Welcome</h1>
+            <h2 className='font-sectionone'>To {BasicInfo.name} </h2>
+            <br></br>
+           <div className="container">
+            <h2 className='alignCentre font-sectionone'>{BasicInfo.tag_line}</h2>
             </div>
             
         </div>

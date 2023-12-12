@@ -1,5 +1,7 @@
 /*   color code*/
-
+*{
+  font-family: 'Poppins', sans-serif;
+}
 .background_clr{
     background: linear-gradient(90deg,#DE331F  0%, #943025 100%);
     color:white !important;
@@ -25,6 +27,12 @@
     font-size: 1.1rem;
   }
 
+  .subheading{
+    font-family: 'Poppins', sans-serif;
+    color:#545454;
+    font-size: 1.1rem;
+    font-weight:700;
+  }
   .border-radius{
     border-radius: 30px;
   }
@@ -52,9 +60,10 @@
 }
 .img-control{
   border-radius: 30px;
-  height:18rem;
+  height:34rem;
   object-fit: cover;
 }
+
 
 /* @media(max-width:767px){
   .position_confirm_card{

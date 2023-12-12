@@ -15,6 +15,7 @@ export default function LandingPage() {
    <div className="container">
    <Bookrooms/>
    </div>
+   
    <Facilities/>
    <div className="container">
     <Gallery/>
