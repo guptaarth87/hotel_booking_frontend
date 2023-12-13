@@ -73,12 +73,16 @@ export default function Pay() {
            />
            <br></br><br></br>
            <button className='btn btn-success' onClick={handlePaymentFetch}>Fetch Amount </button>
-           <br></br><br></br>
+           <br></br>
+           <a href={QrCode} download="QR Code" className='btn btn-secondary'>Download QR code</a>
+            <br></br>
+          
            {
             Fetched?
             <>
             <h5>Payable Amount : {payAmount}</h5>
             <br></br>
+           
             <img src={QrCode} />
             </>
             :
