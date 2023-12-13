@@ -10,7 +10,7 @@ function ListItem({ items }) {
         "nav":"/"
     },
       {
-          "name":"About us",
+          "name":"About Us",
           "nav":"/about"
       },
         {
@@ -22,7 +22,7 @@ function ListItem({ items }) {
           "nav":'/gallery'
        },
        {
-        "name":"Contact us",
+        "name":"Contact Us",
         "nav":'/contactus'
      },
      

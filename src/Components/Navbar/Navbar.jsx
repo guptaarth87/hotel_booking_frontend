@@ -50,10 +50,10 @@ export default function Navbar() {
      </div>:<div>
               {/* <img  src={cardData.Logo_url}  className= "alignLeft Logo"/> */}
               <HLink className="nav_link link5" to='/' >Home</HLink>
-              <HLink className="nav_link link4" to='/about'>About us</HLink>
+              <HLink className="nav_link link4" to='/about'>About Us</HLink>
               <HLink className="nav_link link1" to='/rooms'>Book Rooms</HLink>
               <HLink className="nav_link link2" to='/gallery'>Gallery</HLink>
-              <HLink className="nav_link link3" to='/contactus'>Contact us</HLink>              
+              <HLink className="nav_link link3" to='/contactus'>Contact Us</HLink>              
               
                            
      </div>

@@ -25,7 +25,7 @@ export default function Gallery() {
       {LandingpageData.gallary_section_data3}
       <br></br>
       <br></br>
-      <Link to='/gallery' className='btn background_clr alignCenter'>Visit Gallary</Link>
+      <Link to='/gallery' className='btn background_clr alignCenter'>Know more</Link>
     </div>
       </div>
    
