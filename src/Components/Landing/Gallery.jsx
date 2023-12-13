@@ -11,11 +11,12 @@ export default function Gallery() {
     <div className="row">
     <img src={LandingpageData.gallary_section_img} className="img-control col-lg-5" />
    
-    <div className="col-lg-6 description">
+    <div className="col-lg-6 ">
     <br></br>
   
         <h3>Events & Images</h3>
         <br></br>
+        <div className="description">
        {LandingpageData.gallary_section_data1}
        <br></br><br></br>
        {LandingpageData.gallary_section_data2}
@@ -25,6 +26,7 @@ export default function Gallery() {
       {LandingpageData.gallary_section_data3}
       <br></br>
       <br></br>
+      </div>
       <Link to='/gallery' className='btn background_clr alignCenter'>Know more</Link>
     </div>
       </div>

@@ -13,7 +13,7 @@ export default function AboutUs() {
   return (
     <>
     <Navbar/>
-     <h2 className='alignCentre mt-4' id="aboutus">About us</h2>
+     <h2 className='alignCentre mt-4' id="aboutus"></h2>
      <div className="container">
      <About/>
      </div>

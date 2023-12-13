@@ -9,9 +9,10 @@ export default function Bookrooms() {
     <h2 className='alignCentre mt-4'>Rooms</h2>
     <br></br>
     <div className="row">
-    <div className="col-lg-6 description">
+    <div className="col-lg-6 ">
         <h3>Rooms & Services</h3>
         <br></br>
+        <div className="description">
         {LandingpageData.room_section_data1}
         <br></br>
         <br></br>
@@ -25,7 +26,7 @@ export default function Bookrooms() {
         {LandingpageData.room_section_data4}
         <br></br>
         <br></br>
-        
+        </div>
         <Link to='/rooms' className='btn background_clr '>Book rooms</Link>
        
       </div>
