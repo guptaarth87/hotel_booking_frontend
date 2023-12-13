@@ -55,7 +55,7 @@ export default function RoomDetails() {
     <div className="col-lg-4 mt-2">
           <p className='description ss'>{filteredObjects[0].description}</p>
           <br></br>
-           <h3>Fascilities</h3>
+           <h3>Facilities</h3>
           <div className="description">{filteredObjects[0].tag_line}</div>
           <br></br>
           
