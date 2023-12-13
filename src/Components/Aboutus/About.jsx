@@ -1,6 +1,6 @@
 import React from 'react'
 import img1 from '../../Assets/about/1.jpg';
-
+import {Link} from 'react-router-dom';
 import { Aboutus } from '../../DataConfigFile';
 import { BasicInfo } from '../../DataConfigFile';
 
@@ -25,13 +25,15 @@ export default function About() {
      <br></br>
      <br></br>
      <div className="row">
-      <div className="col-lg-12 col-sm-12 subheading">
-        {Aboutus.div3_content}{BasicInfo.phone_no}.
+      <div className="col-lg-12 col-sm-12 description">
+        {Aboutus.div3_content}
         <br></br>
-        
+        {/* For reservations or inquiries, please contact us at {BasicInfo.phone_no}*/}
         {Aboutus.div4_content}
       </div>
      </div>
+     <br></br>
+     <Link to='/contactus' className="btn background_clr">Contact Us</Link>
      <br></br>
      <br></br>
      <div className="row ">

@@ -135,7 +135,7 @@ export const Aboutus={
     
     "div1_content":"Welcome to Hotel Amar Shanti, your ideal hotel in Meghnagar, Madhya Pradesh. We take pride in being among the best hotels in Meghnagar, offering modern amenities, fine dining, and event planning services.Our strategic location, right in front of the bus station on the highway, ensures a stress-free arrival for guests travelling by road or bus, making us one of the most convenient budget hotels in Meghnagar",
     "div2_content":"Whether you're visiting for business meetings or conferences, our dedicated event planning services are at your disposal, making us one of the best budget hotels in Meghnagar. Dining at our in-house restaurant is a culinary delight, offering local and international cuisine prepared by our culinary experts. We are also conveniently located near the Meghnagar railway station, making us one of the top hotels near Meghnagar railway station.",
-    "div3_content":" As one of the top hotels in Meghnagar, your satisfaction is our commitment. For reservations or inquiries, please contact us at ",
+    "div3_content":" As one of the top hotels in Meghnagar, your satisfaction is our commitment.",
     "div4_content":"Discover the convenience and comfort of Hotel Amar Shanti, one of the best hotels in Meghnagar. We strive to make your stay in Meghnagar memorable and hassle-free.",
     "img1":aboutimg1,
     "img2":aboutimg2,
