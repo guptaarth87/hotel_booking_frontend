@@ -65,7 +65,7 @@ export const rooms_data = [
         "img_url":ac_family_sofa1,
         "images":[ac_family_sofa1,ac_family_sofa2,ac_family_sofa3],
         "tag_line":"Additional Bed | Ac | WIFI | Food | TV | Taxi Services",
-        "description": "Relax & unwind in spacious comfort providing you with a more relaxed and spacious environment.",
+        "description": "Family Fun Starts Here, it is more comfortable for families travelling together",
         "price":1500
     },
     {
@@ -73,7 +73,7 @@ export const rooms_data = [
         "img_url":executive_ac1,
         "images":[executive_ac1,executive_ac2,executive_ac3],
         "tag_line":"Ac | wifi | Food | TV | Taxi Services",
-        "description": "Hotel Delux room: A lavish, upscale accommodation featuring luxurious amenities and elegant decor. Equipped with modern comforts, a spacious layout, and scenic views, providing a sophisticated and comfortable stay for guests.",
+        "description": "Relax & unwind in spacious comfort providing you with a more relaxed and spacious environment.",
         "price":1500
     },
     {
