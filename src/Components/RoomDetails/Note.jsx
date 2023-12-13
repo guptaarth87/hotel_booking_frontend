@@ -8,8 +8,9 @@ export default function Note() {
     <>
     <div className="container mt-3">
             <div className="card p-4 ">
-            <h4 className='alignCentre'>Note that - </h4>
+           
         <div className="row">
+        <h4 className='alignCentre'>Terms & Condition - </h4>
            <img src={note} className="col-lg-5 img_control_hidden" /> 
           <div className="col-lg-6">
           {

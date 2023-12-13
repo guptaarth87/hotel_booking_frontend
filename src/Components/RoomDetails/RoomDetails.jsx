@@ -59,7 +59,7 @@ export default function RoomDetails() {
           <div className="description">{filteredObjects[0].tag_line}</div>
           <br></br>
           
-          <h5>Price - {filteredObjects[0].price} + 12% gst</h5>
+          <h5>Price - &#8377;{filteredObjects[0].price} + 12% gst</h5>
           <br></br>
         
           <Link className='btn background_clr'
@@ -67,7 +67,7 @@ export default function RoomDetails() {
             pathname: '/checkavailability', 
             search: `?type_of_room=${dataValue}&price=${filteredObjects[0].price}` 
         }}
-          >Book now</Link>
+          >Book Now</Link>
          
   </div>
     </div>
