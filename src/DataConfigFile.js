@@ -120,7 +120,7 @@ export const BasicInfo = {
     "name": "Hotel Amar Shanti",
     "address" :"Jhabua road ,Aspatal chauraha ,  Meghnagar",
     "phone_no":"+91 9752450044",
-    "tag_line":"Your ideal hotel in Meghnagar, Madhya Pradesh."
+    "tag_line":"Your Ideal Hotel In Meghnagar, Madhya Pradesh."
 }
 
 export const NoteData = [

@@ -4,63 +4,63 @@ import './Facilities.css'
 export default function Facilities() {
     const facilityList = [
         {    'id':0,
-              'name':"wifi",
+              'name':"Wifi",
              'img_url':"https://img.icons8.com/color/48/wifi--v1.png"
         },
         {    'id':1,
-              "name":"taxi service",
+              "name":"Taxi Service",
              'img_url':"https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/external-taxi-taxi-service-itim2101-lineal-color-itim2101-4.png"
         },
         {    'id':2,
-              "name":"pure veg jain food",
+              "name":"Pure Veg Jain Food",
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
         },
         {    'id':3,
-             "name":"hygine and clean environment",
+             "name":"Hygine & Clean Environment",
              'img_url':"https://img.icons8.com/color/48/cleaning-service.png"
         },
         {    'id':4,
-              "name":"service assistance",
+              "name":"Service Assistance",
              'img_url':"https://img.icons8.com/color/48/rich.png"
         },
         {    'id':5,
-              'name':"wifi",
+              'name':"Wifi",
              'img_url':"https://img.icons8.com/color/48/wifi--v1.png"
         },
         {    'id':6,
-              "name":"taxi service",
+              "name":"Taxi Service",
              'img_url':"https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/external-taxi-taxi-service-itim2101-lineal-color-itim2101-4.png"
         },
         {    'id':7,
-              "name":"pure veg jain food",
+              "name":"Pure Veg Jain Food",
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
         },
         {    'id':8,
-             "name":"hygine and clean environment",
+             "name":"Hygine & Clean Environment",
              'img_url':"https://img.icons8.com/color/48/cleaning-service.png"
         },
         {    'id':9,
-              "name":"service assistance",
+              "name":"Service Assistance",
              'img_url':"https://img.icons8.com/color/48/rich.png"
         },
         {    'id':10,
-              'name':"wifi",
+              'name':"Wifi",
              'img_url':"https://img.icons8.com/color/48/wifi--v1.png"
         },
         {    'id':11,
-              "name":"taxi service",
+              "name":"Taxi Service",
              'img_url':"https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/external-taxi-taxi-service-itim2101-lineal-color-itim2101-4.png"
         },
         {    'id':12,
-              "name":"pure veg jain food",
+              "name":"Pure Veg Jain Food",
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
         },
         {    'id':13,
-             "name":"hygine and clean environment",
+             "name":"Hygine & Clean Environment",
              'img_url':"https://img.icons8.com/color/48/cleaning-service.png"
         },
         {    'id':14,
-              "name":"service assistance",
+              "name":"Service Assistance",
              'img_url':"https://img.icons8.com/color/48/rich.png"
         },
        
@@ -70,7 +70,7 @@ export default function Facilities() {
   <div id="facilities mt-4"></div>
   <div  >
     <br></br>
-  <h2 className='alignCentre mt-4'>Available facilities</h2>
+  <h2 className='alignCentre mt-4'>Available Facilities</h2>
       <div className="slider">
         <div className="slide-track">
             

@@ -10,7 +10,7 @@ export default function Bookrooms() {
     <br></br>
     <div className="row">
     <div className="col-lg-6 description">
-        <h3>Rooms and Services</h3>
+        <h3>Rooms & Services</h3>
         <br></br>
         {LandingpageData.room_section_data1}
         <br></br>

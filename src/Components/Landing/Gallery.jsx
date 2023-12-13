@@ -14,7 +14,7 @@ export default function Gallery() {
     <div className="col-lg-6 description">
     <br></br>
   
-        <h3>Events and Images</h3>
+        <h3>Events & Images</h3>
         <br></br>
        {LandingpageData.gallary_section_data1}
        <br></br><br></br>
