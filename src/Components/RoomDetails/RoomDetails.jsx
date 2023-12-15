@@ -56,7 +56,7 @@ export default function RoomDetails() {
           <p className='description ss'>{filteredObjects[0].description}</p>
           <br></br>
            <h3>Facilities</h3>
-          <div className="description">{filteredObjects[0].tag_line}</div>
+          <div className="description">{filteredObjects[0].tag_line}<br></br>{filteredObjects[0].tag_line2}</div>
           <br></br>
           
           <h5>Price - &#8377;{filteredObjects[0].price} + 12% gst</h5>

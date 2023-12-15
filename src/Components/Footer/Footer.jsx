@@ -19,7 +19,7 @@ function Footer(){
                 </div>
                 <div className="subdiv col-lg-7">
                 <div className="row">
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-3 col-md-6">
                     <h5 className="mb-3 white">Quick links</h5>
                      <ul className="list-unstyled text-muted">
                         <li><HashLink className="link white" to="#rooms">Book Rooms</HashLink></li>
@@ -29,16 +29,21 @@ function Footer(){
                     </ul>
                 </div>
                 
-                <div className="col-lg-5 col-md-6 ">
-                    <h5 className="mb-3 white">Contact info</h5>
+                <div className="col-lg-4 col-md-6 ">
+                    <h5 className="mb-3 white">Address</h5>
                     <ul className="list-unstyled text-muted">
-                    <li className='white'>Address : {BasicInfo.address}</li>
-                        <li className='white'>Phone No : {BasicInfo.phone_no}</li>
-                        
-                        
+                    <li className='white'>{BasicInfo.address}</li>
+                    
                     </ul>
                 </div>
-               
+                <div className="col-lg-5 col-md-6 ">
+                <h5 className="mb-3 white">Contact info</h5>
+                <ul className="list-unstyled text-muted">
+                <li className='white'>Phone No : {BasicInfo.phone_no}</li>
+                        <li className='white'>Email : {BasicInfo.email}</li>
+                        
+                </ul>
+                </div>
                
                 </div>
              </div>

@@ -14,10 +14,11 @@ export default function Rooms() {
                 return(
                     <div className=" col-lg-4 p-2">
                           <img className="card-img height_img mt-3" src={items.img_url} />
-                          <h4 className="alignCentre mt-2">{items.type_of_room}     </h4>
+                          <div className="alignCentre mt-2 description">{items.type_of_room}     </div>
                           {/* <h5 className="">Price - {items.price}/-</h5> */}
-                          <p className='description'>{items.tag_line}</p>
                           <div className="btnCentre">
+                          <p className='description'>{items.tag_line}<br></br>{items.tag_line2}</p>
+                          
                           <Link className="btn background_clr "
                           to={{ 
                             pathname: '/roomdetails', 

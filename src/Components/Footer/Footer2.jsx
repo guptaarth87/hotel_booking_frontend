@@ -24,21 +24,19 @@ export default function Footer2() {
                  <h5 className="mb-3 white">Contact info</h5>
                  <ul className="list-unstyled text-muted">
                  <li className='white'>Address : {BasicInfo.address}</li>
-                     <li className='white'>Phone No : {BasicInfo.phone_no}</li>
-                     
-                     
+                 
                  </ul>
              </div>
-             {/* <div className="col-lg-4 col-md-6 ">
-                 <h5 className="mb-3 white">Contact info</h5>
+            <div className="col-lg-5 col-md-6 ">
+                 <h5 className="mb-3 white">Details</h5>
                  <ul className="list-unstyled text-muted">
-                 <li className='white'>Address : {BasicInfo.address}</li>
-                     <li className='white'>Phone No : {BasicInfo.phone_no}</li>
-                     
+                   <li className='white'>Phone No : {BasicInfo.phone_no}</li>
+                     <li className='white'>Email : {BasicInfo.email}</li>
+                    
                      
                  </ul>
              </div>
-             <div className="col-lg-4 col-md-6 ">
+             {/*  <div className="col-lg-4 col-md-6 ">
                  <h5 className="mb-3 white">Contact info</h5>
                  <ul className="list-unstyled text-muted">
                  <li className='white'>Address : {BasicInfo.address}</li>
