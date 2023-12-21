@@ -1,6 +1,9 @@
+import Logo from './Assets/logo.jpg';
+
 import gallary_img from './Assets/landing/gallary_img.jpg';
 import room_img from './Assets/landing/room_img.jpg';
 import video1 from './Assets/landing/landing_video1.mp4';
+
 
 import ac_delux1 from './Assets/rooms images/ac delux/1.jpg'
 import ac_delux2 from './Assets/rooms images/ac delux/2.jpg'
@@ -120,6 +123,7 @@ export const LandingpageData ={
     }
 
 export const BasicInfo = {
+    "logo":Logo,
     "name": "Hotel Amar Shanti",
     "address" :"Above State Bank of India, Aspatal Chouraha, Megh Nagar, Madhya Pradesh 457779",
     "phone_no":"+91 9752450044",

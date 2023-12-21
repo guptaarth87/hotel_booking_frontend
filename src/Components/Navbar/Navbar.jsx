@@ -6,7 +6,7 @@ import { useEffect , useState} from 'react';
 import './Navbar.css';
 import MenuButton from './MenuButton';
 // import { cardData } from '../../_helpers/DataConfig';
-
+import { BasicInfo } from '../../DataConfigFile';
 export default function Navbar() {
     const [windowSize, setWindowSize] = useState([
         window.innerWidth,
@@ -37,18 +37,18 @@ export default function Navbar() {
       return (
         <> 
            <div className = "navbar_custom flex shadow_bottom"> 
-              <div className = "navcontent "> 
+              <div className = "navcontent p-2 "> 
     
     {
      check()?
      <div>
-        {/* <img  src={cardData.Logo_url}  className= "alignLeft Logo"/>   */}
+        <img  src={BasicInfo.logo}  className= "alignLeft Logo"/>  
         <MenuButton className=" botton_pos marginAlign"/> 
         
         {/* <button onClick={()=>navigate('/Signup')} className="alignRight btn botton botton_pos marginAlign">Join network</button> */}
        
      </div>:<div>
-              {/* <img  src={cardData.Logo_url}  className= "alignLeft Logo"/> */}
+              <img  src={BasicInfo.logo}  className= " alignLeft Logo"/>
               <HLink className="nav_link link5" to='/' >Home</HLink>
               <HLink className="nav_link link4" to='/about'>About Us</HLink>
               <HLink className="nav_link link1" to='/rooms'>Book Rooms</HLink>
