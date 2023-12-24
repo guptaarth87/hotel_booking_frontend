@@ -1,4 +1,4 @@
-import Logo from './Assets/logo.jpg';
+import Logo from './Assets/logo.png';
 
 import gallary_img from './Assets/landing/gallary_img.jpg';
 import room_img from './Assets/landing/room_img.jpg';
@@ -124,7 +124,7 @@ export const LandingpageData ={
 
 export const BasicInfo = {
     "logo":Logo,
-    "name": "Hotel Amar Shanti",
+    "name": "Amar Shanti",
     "address" :"Above State Bank of India, Aspatal Chouraha, Megh Nagar, Madhya Pradesh 457779",
     "phone_no":"+91 9752450044",
     "email":"Amarshanti@gmail.com",

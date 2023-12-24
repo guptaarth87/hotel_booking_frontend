@@ -7,10 +7,7 @@ export default function Facilities() {
               'name':"Wifi",
              'img_url':"https://img.icons8.com/color/48/wifi--v1.png"
         },
-        {    'id':1,
-              "name":"Taxi Service",
-             'img_url':"https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/external-taxi-taxi-service-itim2101-lineal-color-itim2101-4.png"
-        },
+        
         {    'id':2,
               "name":"Pure Veg Jain Food",
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
@@ -27,10 +24,7 @@ export default function Facilities() {
               'name':"Wifi",
              'img_url':"https://img.icons8.com/color/48/wifi--v1.png"
         },
-        {    'id':6,
-              "name":"Taxi Service",
-             'img_url':"https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/external-taxi-taxi-service-itim2101-lineal-color-itim2101-4.png"
-        },
+        
         {    'id':7,
               "name":"Pure Veg Jain Food",
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
@@ -47,10 +41,7 @@ export default function Facilities() {
               'name':"Wifi",
              'img_url':"https://img.icons8.com/color/48/wifi--v1.png"
         },
-        {    'id':11,
-              "name":"Taxi Service",
-             'img_url':"https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/external-taxi-taxi-service-itim2101-lineal-color-itim2101-4.png"
-        },
+        
         {    'id':12,
               "name":"Pure Veg Jain Food",
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
