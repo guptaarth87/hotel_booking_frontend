@@ -33,7 +33,7 @@ export default function RoomDetails() {
     <>
     <Navbar/>
     <div className="container">
-    <h2 className='mt-4 alignCentre'>Details for {dataValue}</h2>
+    <h2 className='mt-4 alignCentre'>Details For {dataValue}</h2>
     <div className="row mt-4">
     
      <div className="carousel-container col-lg-7">

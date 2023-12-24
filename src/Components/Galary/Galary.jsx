@@ -5,7 +5,7 @@ import './Galary.css';
 export default function Galary() {
   return (
     <>  
-      <h2 className='alignCentre m-4 ' id="gallery">Gallery section</h2>
+      <h2 className='alignCentre m-4 ' id="gallery">Gallery Section</h2>
     <div className="row ">
      <img  className="col-lg-7 border-radius m-2 galary-img-height" src={GallaryImages.img1} />
      <div className="col-lg-4 ">

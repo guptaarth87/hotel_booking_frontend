@@ -27,7 +27,7 @@ export default function Bookrooms() {
         <br></br>
         <br></br>
         </div>
-        <Link to='/rooms' className='btn background_clr '>Book rooms</Link>
+        <Link to='/rooms' className='btn background_clr '>Book Rooms</Link>
        
       </div>
       <br></br>

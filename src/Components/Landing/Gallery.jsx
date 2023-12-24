@@ -27,8 +27,8 @@ export default function Gallery() {
       <br></br>
       <br></br>
       </div>
-      <Link to='/gallery' className='btn background_clr alignCenter'>Know more</Link>
-    </div>
+      <Link to='/gallery' className='btn background_clr alignCenter'>Know More</Link>
+    </div> 
       </div>
    
     </div>

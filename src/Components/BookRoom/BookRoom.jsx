@@ -87,7 +87,7 @@ console.log(today);
                 <div class="col-lg-6">
                 <div class="row g-3" >
                   <strong>Note** You have to text us on Whatapp at number {BasicInfo.phone_no} for payment and booking confirmation. </strong>
-                <h5 className=' alignCentre'>Enter details to book</h5>
+                <h5 className=' alignCentre'>Enter Details To Book</h5>
                     <div class="col-md-12">
                       <label for="fullname" class="form-label">Full name</label>
                       <input type="text" class="form-control" id="inputFullname"
@@ -107,7 +107,7 @@ console.log(today);
                     <h5>Total Amount - {Amount}</h5>
                     <div class="col-12">
                     <div className="btnCentre">
-                        <button type="submit" class="btn background_clr" onClick={handleBooking}>Book room</button>
+                        <button type="submit" class="btn background_clr" onClick={handleBooking}>Book Room</button>
                       </div>
                     </div>
                     </div>

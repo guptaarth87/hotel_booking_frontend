@@ -13,6 +13,7 @@ function Footer(){
        
             <div className="row gy-4 gx-5">
                 <div className="col-lg-4 col-md-6">
+                <h5 className="h1 white">Hotel</h5>
                     <h5 className="h1 white">{BasicInfo.name}</h5>
                     <p className="small white subhead">Best Room , Staff Services & Food Services!</p>
                     <p className="small white mb-0">&copy; Copyrights. All rights reserved. Hotel Amar Shanti</p>
@@ -24,7 +25,7 @@ function Footer(){
                      <ul className="list-unstyled text-muted">
                         <li><HashLink className="link white" to="#rooms">Book Rooms</HashLink></li>
                         <li><HashLink className="link white" to="#facilities">Facilities</HashLink></li>
-                        <li><HashLink className="link white" to="#SectionOne">Go to top</HashLink></li>
+                        <li><HashLink className="link white" to="#SectionOne">Go To Top</HashLink></li>
                         <li><Link className="link white" to="#contact">Contact</Link></li>
                     </ul>
                 </div>

@@ -51,7 +51,7 @@ export default function Pay() {
   <Loader/>
   :
      <div className="container">
-        <h2 className='alignCentre mt-4'>Payment page</h2>
+        <h2 className='alignCentre mt-4'>Payment Page</h2>
      {
         popup?
         <div className="popup col-lg-4 col-sm-12">

@@ -17,10 +17,10 @@ export default function ContactusPage() {
         </div>
                         
         <div className=" card col-lg-4 p-3 m-1 position_style_card">
-             <div className='alignCentre heading'>Contact us </div>
+             <div className='alignCentre heading'>Contact Us </div>
            <br></br>
            <img src={contact}  className='img_control_hidden col-lg-6 col-sm-2'/>
-           <h5 className=''>ADDRESS</h5>
+           <h5 className=''>Address</h5>
            <div className='description'>{BasicInfo.address}</div>
            <br></br>
            <h5 className=''>Phone No </h5>

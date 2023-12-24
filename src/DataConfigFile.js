@@ -59,8 +59,8 @@ export const rooms_data = [
         "type_of_room":"Executive Sofa AC Room",
         "img_url":executive_sofa1,
         "images":[executive_sofa1,executive_sofa2,executive_sofa3],
-        "tag_line":"Seating SpaceI Ac | WIFI | Food | TV |",
-        "tag_line2":"Staff Services",
+        "tag_line":"Seating Space | AC | WIFI  ",
+        "tag_line2":" Food | TV | Staff Services",
         "description": "Relax & unwind in spacious comfort providing you with a more relaxed and spacious environment." ,
         "price":1750
     },
@@ -68,8 +68,8 @@ export const rooms_data = [
         "type_of_room":"Family Sofa AC Room",
         "img_url":ac_family_sofa1,
         "images":[ac_family_sofa1,ac_family_sofa2,ac_family_sofa3],
-        "tag_line":"Additional Bed | Ac | WIFI | Food | TV |",
-        "tag_line2":"Staff Services",
+        "tag_line":"Additional Bed | AC | WIFI  ",
+        "tag_line2":"Food | TV | Staff Services",
         "description": "Family Fun Starts Here, it is more comfortable for families travelling together",
         "price":1500
     },
@@ -77,7 +77,8 @@ export const rooms_data = [
         "type_of_room":"Executive AC Room",
         "img_url":executive_ac1,
         "images":[executive_ac1,executive_ac2,executive_ac3],
-        "tag_line":"Ac | wifi | Food | TV | Staff Services",
+        "tag_line":"AC | WIFI | Food ",
+        "tag_line2":" TV | Staff Services",
         "description": "Relax & unwind in spacious comfort providing you with a more relaxed and spacious environment.",
         "price":1500
     },
@@ -85,7 +86,8 @@ export const rooms_data = [
         "type_of_room":"Deluxe AC Room",
         "img_url":ac_delux1,
         "images":[ac_delux1 , ac_delux2, ac_delux3, ],
-        "tag_line":"Temperature Control | Ac | WIFI | Food | TV | Premium Amenities | Staff Services ",
+        "tag_line":"Temperature Control | AC | WIFI  ",
+        "tag_line2":" Food | TV | Premium Amenities | Staff Services",
         "description": "Cool, comfy & quiet - your perfect stay!",
         "price":950
     },
@@ -93,7 +95,8 @@ export const rooms_data = [
         "type_of_room":"Conference AC Room",
         "img_url":conference_room1,
         "images":[conference_room1 , conference_room2 , conference_room3],
-        "tag_line":"Ac | WIFI | Food | TV | Staff Services ",
+        "tag_line":"AC | WIFI | Food  ",
+        "tag_line2":"  TV | Staff Services",
         "description": "Cool heads & clear thinking for successful events",
         "price":1000
     },
@@ -101,8 +104,8 @@ export const rooms_data = [
         "type_of_room":"Party hall",
         "img_url":party_hall1,
         "images":[party_hall1 ,party_hall2 , party_hall3],
-        "tag_line":" Hall Space | AC | WIFI | Food | TV |",
-        "tag_line2":"Staff Services",
+        "tag_line":" Hall Space | AC | WIFI  ",
+        "tag_line2":"  Food | TV | Staff Services",
         "description": "Celebrate Every Occasion at Amar Shanti Hotel",
         "price":10000
     }
