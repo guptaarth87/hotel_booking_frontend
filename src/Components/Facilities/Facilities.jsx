@@ -54,7 +54,13 @@ export default function Facilities() {
               "name":"Service Assistance",
              'img_url':"https://img.icons8.com/color/48/rich.png"
         },
-       
+        {    'id':15,
+        'name':"Wifi",
+       'img_url':"https://img.icons8.com/color/48/wifi--v1.png"
+  },{    'id':16,
+  "name":"Pure Veg Jain Food",
+ 'img_url':"https://img.icons8.com/color/48/spirulina.png"
+}
        ];
   return (
     <>
