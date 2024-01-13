@@ -39,6 +39,11 @@
     background-color: rgba(0,0,0,.4);
     
   }
+  @media(max-width:1300px){
+    .overlay{
+        height:85%;
+    }
+  }
   @media(max-width:765px){
     .overlay{
         height:85%;
