@@ -42,13 +42,13 @@ export default function Navbar() {
     {
      check()?
      <div>
-        <img  src={BasicInfo.logo}  className= "alignLeft Logo"/>  
+        <HLink to='/'><img  src={BasicInfo.logo}  className= "alignLeft Logo"/>  </HLink>
         <MenuButton className=" botton_pos marginAlign"/> 
         
         {/* <button onClick={()=>navigate('/Signup')} className="alignRight btn botton botton_pos marginAlign">Join network</button> */}
        
      </div>:<div>
-              <img  src={BasicInfo.logo}  className= " alignLeft Logo"/>
+              <HLink to='/'><img  src={BasicInfo.logo}  className= " alignLeft Logo"/></HLink>
               <HLink className="nav_link link5" to='/' >Home</HLink>
               <HLink className="nav_link link4" to='/about'>About Us</HLink>
               <HLink className="nav_link link1" to='/rooms'>Book Rooms</HLink>

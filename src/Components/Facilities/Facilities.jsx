@@ -13,7 +13,7 @@ export default function Facilities() {
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
         },
         {    'id':3,
-             "name":"Hygine & Clean Environment",
+             "name":"Hygienic ",
              'img_url':"https://img.icons8.com/color/48/cleaning-service.png"
         },
         {    'id':4,
@@ -30,7 +30,7 @@ export default function Facilities() {
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
         },
         {    'id':8,
-             "name":"Hygine & Clean Environment",
+             "name":"Hygienic",
              'img_url':"https://img.icons8.com/color/48/cleaning-service.png"
         },
         {    'id':9,
@@ -41,13 +41,16 @@ export default function Facilities() {
               'name':"Wifi",
              'img_url':"https://img.icons8.com/color/48/wifi--v1.png"
         },
-        
+        {    'id':21,
+"name":"Clean Environment",
+'img_url':"https://img.icons8.com/color/48/cleaning-service.png"
+},
         {    'id':12,
               "name":"Pure Veg Jain Food",
              'img_url':"https://img.icons8.com/color/48/spirulina.png"
         },
         {    'id':13,
-             "name":"Hygine & Clean Environment",
+             "name":"Hygienic",
              'img_url':"https://img.icons8.com/color/48/cleaning-service.png"
         },
         {    'id':14,
@@ -60,7 +63,11 @@ export default function Facilities() {
   },{    'id':16,
   "name":"Pure Veg Jain Food",
  'img_url':"https://img.icons8.com/color/48/spirulina.png"
+},{    'id':13,
+"name":"Clean Environment",
+'img_url':"https://img.icons8.com/color/48/cleaning-service.png"
 }
+
        ];
   return (
     <>
