@@ -57,42 +57,32 @@
       height:80%;
     }
   }
+
   @media(max-height:854px){
     .overlay{
       height:83%;
     }
   }
 
+  @media(max-height:670px){
+    .overlay{
+      height:80%;
+    }
+  }
   @media(max-height:676px){
     .overlay{
       height:86%;
     }
   }
+  @media(max-height:530px){
+    .overlay{
+      height:88%;
+    }
+  }
 
   @media(max-height:486px){
     .overlay{
-      height:91%;
+      height:90%;
     }
   }
-  /* @media(max-width:1300px){
-    .overlay{
-        height:85%;
-    }
-  } */
-  /* @media(max-width:765px){
-    .overlay{
-        height:85%;
-    }
-  }
-
-  @media(max-height:534px){
-    .overlay{
-      height:85%;
-    }
-}
-
-@media(max-height:411px){
-  .video_control{
-    height:75%;
-  }
-} */
+ 
