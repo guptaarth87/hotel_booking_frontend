@@ -66,7 +66,7 @@
 
   @media(max-height:670px){
     .overlay{
-      height:80%;
+      height:82%;
     }
   }
   @media(max-height:676px){
@@ -75,6 +75,17 @@
     }
   }
   @media(max-height:530px){
+    .overlay{
+      height:88%;
+    }
+  }
+  @media(max-height:537px){
+    .overlay{
+      height:89%;
+    }
+  }
+
+  @media(max-height:548px){
     .overlay{
       height:88%;
     }
