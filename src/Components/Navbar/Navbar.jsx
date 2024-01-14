@@ -36,7 +36,7 @@ export default function Navbar() {
     
       return (
         <> 
-           <div className = "navbar_custom flex shadow_bottom"> 
+           <div className = "navbar_custom flex "> 
               <div className = "navcontent p-2 "> 
     
     {
