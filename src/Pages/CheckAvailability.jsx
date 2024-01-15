@@ -6,6 +6,7 @@ import Header from '../Components/Navbar/Header'
 import Navbar from '../Components/Navbar/Navbar'
 
 export default function CheckAvailability() {
+  
   return (
    <>
    <Navbar/>
