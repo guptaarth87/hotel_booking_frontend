@@ -9,23 +9,23 @@ import './Check.css';
 import Loader from '../Loader/Loader';
 
 export default function Check() {
-  useEffect(() => {
-    const Api_req = async () => {
-      try {
-        const resp = await axios.post(`${API_URL}checkavailaiblity`)
-        console.log(resp);
-        // Handle the response if needed
-      } catch (err) {
-        console.error(err);
-      }
-    };
+  // useEffect(() => {
+  //   const Api_req = async () => {
+  //     try {
+  //       const resp = await axios.post(`${API_URL}checkavailaiblity`)
+  //       console.log(resp);
+  //       // Handle the response if needed
+  //     } catch (err) {
+  //       console.error(err);
+  //     }
+  //   };
 
-    // Call Api_req when the component is mounted
-    Api_req();
+  //   // Call Api_req when the component is mounted
+  //   Api_req();
 
-    // Optionally, you can return a cleanup function if needed
+  //   // Optionally, you can return a cleanup function if needed
    
-  }, []);
+  // }, []);
   const navigate = useNavigate();
   const [data, setData] = useState(null);
   const location = useLocation();
