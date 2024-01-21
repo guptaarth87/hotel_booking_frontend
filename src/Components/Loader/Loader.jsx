@@ -15,7 +15,7 @@ const Loader = () => {
      
         <div className="loader-container">
           <div className="loader"></div>
-          <p>Fetching Data...</p>
+          <p>Fetching Rooms Info</p>
         </div>
       
     </div>
