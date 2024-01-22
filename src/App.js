@@ -1,5 +1,7 @@
 
 import './App.css';
+// import { useLocation } from 'react-router-dom';
+// import { useEffect } from 'react';
 import {Routes , Route} from 'react-router-dom';
 import LandingPage from './Pages/LandingPage';
 import RoomDetails from './Components/RoomDetails/RoomDetails';
@@ -12,11 +14,13 @@ import Rooms from './Components/Rooms/Rooms';
 import BookRoompage from './Pages/BookRoompage';
 import ContactusPage from './Pages/ContactusPage';
 import GaleryPage from './Pages/GaleryPage';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <div className="App">
        <main>  
+       <ScrollToTop/>
       <Routes>
        
         <Route path='/' element={<LandingPage/>}/>
