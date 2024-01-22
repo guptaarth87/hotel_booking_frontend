@@ -11,16 +11,16 @@ export default function Rooms() {
     // Set a timer to change isLoading to false after 3 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
         // Cleanup the timer if the component unmounts before the timer completes
         return () => clearTimeout(timer);
       }, []); // The empty dependency array ensures that this effect runs only once on mount
-    
+      // <> 
+      //  {isLoading ? (
+      //   <Loader />
+      // ) : 
   return (
-      <> 
-       {isLoading ? (
-        <Loader />
-      ) : 
+    
       <>
         <div id ="rooms"></div>
         <h2 className='alignCentre mt-4'>Book Rooms</h2>
@@ -49,8 +49,10 @@ export default function Rooms() {
        
         </div>
       </>
-      }
-         
-      </>
+    
   )
 }
+
+{/* }
+         
+         </> */}
